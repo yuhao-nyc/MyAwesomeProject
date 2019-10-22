@@ -16,7 +16,7 @@ export class Header extends React.Component<Props, State> {
             uri: 'https://assets.website-files.com/5d5c3321a47ce772f0f4b293/5d65a5691b07769229ac1892_favicon%20(2).png'
         }
         return (
-            <View>
+            <View style={{bottom: 35}}>
                 <Image source={logo} style={styles.logo}/>
                 <Text
                     onPress={() => Linking.openURL('https://www.simplebet.io/')}
@@ -32,9 +32,9 @@ export class Header extends React.Component<Props, State> {
 const styles = StyleSheet.create({
     header: {
         color: '#28C856',
-        fontSize: 24,
+        fontSize: 12,
         left: 20,
-        top: 5,
+        top: 13,
     },
     logo: {
         width: 20,

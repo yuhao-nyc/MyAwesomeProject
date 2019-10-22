@@ -2,6 +2,7 @@ import React from 'react'
 import { Button, StyleSheet, Text, View, TextInput, ScrollView } from 'react-native'
 import { Header } from './widgets/Header'
 import { EventList } from './widgets/EventList'
+import { EventData } from './widgets/EventData'
 
 interface Props {
     name?: String;
@@ -57,7 +58,8 @@ export class Hello extends React.Component<Props, State> {
                             this.state.showContent ? <Text style={styles.content}>Some Content you don't wanna see </Text> : <Text></Text>
                         }
                     </View>
-                    <EventList/> 
+                    <EventList/>
+                    <EventData/>
                 </View>
             </ScrollView>  
         )
